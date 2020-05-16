@@ -16,6 +16,8 @@
             <a-asset-item id="material" src="models/tree.mtl"></a-asset-item>
             <a-asset-item id="zwarteboom" src="models/low-poly-dead-tree.obj"></a-asset-item>
             <a-asset-item id="materiaalzwart" src="models/low-poly-dead-tree.mtl"></a-asset-item>
+            <a-asset-item id="skelet" src="models/skull.obj"></a-asset-item>
+            <a-aset-item id="skelet_materiaal" src="models/skull.mtl"></a-aset-item>
         </a-assets>
        
         <a-plane 
@@ -47,6 +49,13 @@
             height="5"
             position="-2 0 -6">
         </a-obj-model>  
+        
+        <a-obj-model
+            src="#skelet"
+            mtl="#skelet_materiaal"
+            height="5"
+            position="-4 1 -2">
+        </a-obj-model>
     </a-scene>
   </body>
 </html>
