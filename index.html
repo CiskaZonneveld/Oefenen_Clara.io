@@ -64,15 +64,15 @@
                       easing: linear;
                       loop: true"
             animation__mouseenter="
-              property: components.material.material.color; 
-              type: color; 
-              to: blue; 
+              property: components.material.material.position; 
+              type: position; 
+              to: -1 3 -1; 
               startEvents: mouseenter; 
               dur: 500;"
             animation__mouseleave="
-              property: components.material.material.color; 
-              type: color; 
-              to: pink; 
+              property: components.material.material.position; 
+              type: position; 
+              to: -1 3 -6; 
               startEvents: mouseleave; 
               dur: 500;">
         </a-obj-model>
@@ -81,7 +81,7 @@
             mtl="#skelet_materiaal"
             scale="0.1 0.1 0.1"
             position="-2 0 -5"
-            rotation="70 0 0">
+            rotation="-70 0 0">
         </a-obj-model>
     </a-scene>
   </body>
