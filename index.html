@@ -9,11 +9,13 @@
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #333">        
+    <a-scene background="color: powderblue">        
         <a-assets>
             <img id="grass" src="images/grass.jpg">
             <a-asset-item id="tree" src="models/tree.obj"></a-asset-item>
             <a-asset-item id="material" src="models/tree.mtl"></a-asset-item>
+            <a-asset-item id="zwarteboom" src="models/low-poly-dead-tree.obj"></a-asset-item>
+            <a-asset-item id="materiaalzwart" src="models/low-poly-dead-tree.mtl"></a-asset-item>
         </a-assets>
        
         <a-plane 
@@ -27,13 +29,23 @@
             src="#tree"
             mtl="#material"
             position="-2 0 10">
-        </a-obj-model> 
-           
+        </a-obj-model>   
         <a-obj-model
             src="#tree"
             mtl="#material"
             position="0 0 10">
         </a-obj-model> 
+         <a-obj-model
+            src="#tree"
+            mtl="#material"
+            position="-1 0 13">
+        </a-obj-model> 
+        
+         <a-obj-model
+            src="#zwarteboom"
+            mtl="#materiaalzwart"
+            position="-2 0 -6">
+        </a-obj-model>  
     </a-scene>
   </body>
 </html>
